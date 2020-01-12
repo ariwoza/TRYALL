@@ -1,0 +1,431 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+/*-------------------ESTILOSDELHEADER---------------------*/
+.header{
+    width:100%;
+    margin:auto;
+    background: #775A2A;
+    margin-bottom: 10px;
+    position: fixed;
+    z-index:100;
+    top: 0;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5)
+}
+ .contenedorhead{
+    margin: auto;
+    width: 80%;
+}
+.logo{
+    display: inline-block;
+}
+.logoscroll{
+    display: none;
+}
+.nav{
+    float: right;
+    display: inline-block;
+    margin-top: 15px;
+    
+}
+.menu{
+    list-style: none;
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-bottom: 4px;
+    
+}
+.menu-icon{
+    float: left;
+    padding: 20px;  
+
+}
+.menu-item{
+    text-decoration: none;
+    padding: 10px;
+    color:#fff;
+}
+.menu-icon a:hover{
+    background: #5D461D;
+}
+
+.icon-menu{
+    display:none;
+    width:40px;
+    height:40px;
+    background-image: url(../img/iconomenu.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    line-height:45px;
+    border-radius:5px;
+    margin-left: auto;
+    cursor:pointer;
+    position: absolute;
+    top: 1em;
+    right: 2em;
+}
+
+.mostrar{
+    left: 0;
+}
+
+/*-------------------MENU RESPONSIVE-------------------------*/
+    @media screen and (max-width:1024px){
+        .icon-menu{
+            display:block;
+            
+        }
+       .nav{
+    position:absolute;
+    top:108px;
+    left:100%;
+    width:100%;
+    z-index: 999;
+    transition: all 0.5s;
+    background: blue;
+    margin: 0px;
+    padding: 0px;
+    }
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display: block;
+}
+.menu-item{
+    display: block;
+    padding: 15px;
+    background: #896C42;
+    text-decoration:none;
+    text-align: center;
+    color:white;
+    opacity: 80%;
+    margin-top: 0px; 
+}
+.menu-icon{
+    display: block;
+    float:none;
+    margin: 0px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    background: #896C42;
+    text-decoration:none;
+    text-align: center;
+    color:white;
+    opacity: 80%;
+    margin-top: 0px;
+    
+}
+       
+.menu-item:hover{
+    background: red;
+    color:black;
+    text-align: center;
+}
+.mostrar{
+    left: 0;
+}
+        
+    }
+/*-----------------------------SECCION HISTORIA-----------------------*/
+.separador{
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+.primercontenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 108px;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftim{
+    width: 50%;
+    display: inline-block;
+}
+.leftim img{
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texder{
+    display: inline-block;
+    background: ;
+    width:50%;
+    float:right;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 8em;
+
+}
+.texder h1{
+    margin: auto;
+    color: black;
+    padding-top: 70px;
+   
+    
+}
+.texder h2{
+    padding-top: 10px;
+}
+.parrafo{
+    width:70%;
+    padding: 20px;
+    margin: auto;
+}
+.parrafo p{
+    padding-top: 50px;
+    text-align: center;
+}
+
+/*--------------------------- MEDIA SEC HISTORIA-----------------------------------*/
+@media screen and (max-width:768px){
+    .leftim{
+        width: 100% !important;
+        display: block !important;
+    }
+    .texder{
+        width:100%;
+    }
+    .botonsec{
+        width: 50% !important;
+        height: 4.5em !important;
+    }
+    .botonsec p{
+        font-size: 1em !important;
+        padding: 30px !important;
+        
+        
+    }
+
+
+}
+@media screen and (min-width:769px){
+  
+    .botonsec{
+        width: 45% !important;
+        height: 4em !important;
+    }
+    .botonsec p{
+        font-size: 100% !important;
+        padding: 1.5em !important;
+        
+        
+    }
+}
+
+
+/*NUEVA---------------------------------------------*/
+/*---------------SECCIÓN DIA A DIA-----------*/
+.flex{
+    display: flex;
+    width:100%;
+}
+.flex .rightim{
+    order:1;
+}
+.flex .texiz{
+    order:0;
+}
+
+.rightim{
+    width: 50%;
+    
+    
+}
+.rightim img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.texiz{
+    display: inline-block;
+    width:50%;  
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 8em;
+
+}
+.texiz h1{
+    margin: auto;
+    color: #775A2A;
+    padding-top: 70px;
+   
+    
+}
+.texiz h2{
+    padding-top: 10px;
+    
+    
+}
+.parrafo{
+    width:70%;
+    padding: 20px;
+    margin: auto;
+}
+.parrafo p{
+    padding-top: 50px;
+}
+.parrafolista{
+    width:70%;
+    padding: 20px;
+    margin: auto;
+}
+.parrafolista p{
+    text-align: left;
+    padding-top: 50px;
+
+}
+.numerales{
+    font-weight: 100;
+}
+.botonsec:hover{
+    cursor: pointer;
+     -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+.botonsec p{
+    padding: 15px;
+}
+.fotovol{
+        -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+/*--------------- MEDIA SECCION DIA A DIA----------*/
+
+@media screen and (max-width:768px){
+    .flex{
+        flex-direction:column;
+    }
+    .rightim, .texiz{
+        width:100%;
+    }
+    .flex .rightim{
+        order:0;
+    }
+    .flex .texiz{
+        order:1;
+    }
+   
+}
+/*--------------------------------FOOTER---------------------------*/
+
+footer{
+    background: #775A2A;
+    height: 200px;
+    width: 100%;
+    
+}
+.divfooter{
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+    display: flex;
+    }
+.footeriz{
+    width: 40%;
+    display: flex;
+    
+}
+.footerder{
+   
+    width: 40%;
+    display: inline-block;
+    margin-left: 7em;
+    text-align: center;
+     color: #fff;
+}
+
+.red{
+    display: inline-block;
+    width: 50px;
+    margin-left: 3em;
+}
+
+/*-----------------------------------MEDIA FOOTER----------------------*/
+
+@media screen and (max-width:1024px){
+    .divfooter{
+        width: 80%;
+    }
+    .footeriz{
+        width: 80%;
+        margin: auto;
+        display: block;
+        
+    }
+    .linearedes{
+        margin: auto;
+
+    }
+    .footerder{
+        margin-top: 3em;
+        margin-left: 0;
+        width: 60%;
+    }
+    footer{
+        height: 300px;
+    }
+    .red{
+        margin-left: 1em;
+    }
+}
+
+@media screen and (max-width:500px){
+      .divfooter{
+        width: 90%;
+          display: block;
+          margin: auto;
+          margin-top: 2em;
+    }
+    .footeriz{
+        width: 80%;
+        margin: auto;
+        display: block;   
+        
+    }
+    .linearedes{
+        margin: auto;
+        justify-content: center;
+        
+
+    }
+    .red{
+        margin-left: 12%
+    }
+    .footerder{
+        
+        margin-left: 20%
+    }
+    footer{
+        height: 300px;
+    }
+}
+}
